@@ -1,0 +1,348 @@
+/***** Importation des polices ****/
+
+@font-face {
+    font-family: "BDO Grotesk";
+    src: url(fonts/BDOGrotesk-VF.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bricolage Grotesque";
+    src: url(fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf) format("truetype");
+}
+
+/**** Variables *****/
+
+:root {
+    /* Colors */
+    --dark: #1e1e1e;
+    --white: #ddd9d6;
+    --orange: #ff4f2d;
+    --green: #00be50;
+
+    /* Font Family */
+    --font-bdo: "BDO Grotesk", sans-serif;
+    --font-bricolage: "Bricolage Grotesque", sans-serif;
+
+    /* Font Size */
+    --font-size-p: 1rem;
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 2rem;
+
+    /* Font Weight */
+    --font-weight-regular: 500;
+    --font-weight-medium: 600;
+
+    /* Line heights */
+    --line-height-p: 1.5rem;
+    --line-height-h1: 3.5rem;
+    --line-height-h2: 3.2rem;
+    --line-height-h3: 2.5rem;
+
+    /* Spacing Scale (Base: 2px / 0.125rem) */
+    --spacing-unit: 0.125rem;
+}
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: var(--font-weight-medium);
+}
+
+h1 {
+    font-family: var(--font-bricolage);
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+}
+
+h2 {
+    font-family: var(--font-bricolage);
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+}
+
+h3 {
+    font-family: var(--font-bdo);
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+}
+
+p {
+    font-family: var(--font-bdo);
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-p);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+strong {
+    font-weight: var(--font-weight-medium);
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: var(--font-bdo);
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-p);
+}
+
+::selection {
+    color: var(--dark);
+    background: var(--orange);
+}
+
+/**** html ****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-bdo);
+    font-size: var(--font-size-p);
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+/**** header ****/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--spacing-unit) * 15);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    max-width: 1440px;
+    background-color: var(--white);
+}
+
+.btn__primary {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 12px 20px;
+    transition: border-radius 0.3s ease-in-out;
+}
+
+.btn__primary:hover {
+    border-radius: 12px;
+}
+
+/**** main ****/
+
+.main__content {
+    width: 100%;
+    max-width: 1440px;
+    flex-grow: 1;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0 0 30px 30px;
+    padding: 100px 60px 0 60px;
+}
+
+/**** section ****/
+
+section {
+    width: 100%;
+}
+
+/**** section hero ****/
+
+.hero,
+.hero__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    max-width: 1200px;
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.hero__div {
+    max-width: 800px;
+    gap: 30px;
+}
+
+.main__title {
+    text-align: center;
+}
+
+.hero__img-1 {
+    width: 100%;
+}
+
+.hero__img-2,
+.hero__img-3 {
+    position: absolute;
+    border: 25px solid var(--white);
+}
+
+.hero__img-2 {
+    left: 725px;
+    top: 490px;
+}
+
+.hero__img-3 {
+    left: -957px;
+    top: 548px;
+}
+
+/**** section atelier__presentation ****/
+
+.atelier__presentation {
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.atelier__presentation,
+.projects__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__section {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__list {
+    width: 50%;
+}
+
+.project__card {
+    width: 100%;
+    padding: 20px 0;
+    color: var(--dark);
+    border-bottom: 1px solid var(--dark);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project__card:hover {
+    transform: scale(1.04);
+}
+
+/**** footer ****/
+
+footer {
+    position: relative;
+    max-width: 1440px;
+    margin-top: -50px;
+    z-index: 0;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--dark);
+    padding: 50px;
+    gap: 30px;
+}
+
+footer::before {
+    content: "";
+    position: relative;
+    display: block;
+}
+
+.footer__container {
+    justify-content: space-between;
+    max-width: 400px;
+    gap: 130px;
+}
+
+.footer__container img {
+    max-width: 200px;
+}
+
+footer,
+.footer__container,
+.footer__info,
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__info {
+    gap: 30px;
+}
+
+.footer__contact {
+    gap: 10px;
+}
+
+.link {
+    color: var(--white);
+}
+
+/**** Media queries ****/
+
+/**** Responsive design version desktop ****/
+
+@media screen and (max-width: 1024px) {
+
+    .hero__img-2,
+    .hero__img-3 {
+        visibility: hidden;
+    }
+
+    .atelier__presentation {
+        padding: 50px 0 200px 0;
+        gap: 100px;
+    }
+}
+
+/**** Resposnive design version tablette ****/
+
+@media screen and (max-width: 767px) {
+    .main__content {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+}
