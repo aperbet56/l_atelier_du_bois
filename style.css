@@ -346,3 +346,40 @@ footer,
         line-height: 1.6rem;
     }
 }
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 475px) {
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .projects__section {
+        flex-direction: column;
+    }
+
+    .projects__list {
+        max-width: 100%;
+        margin-top: 100px;
+    }
+
+    footer {
+        gap: 50px;
+        padding: 30px;
+    }
+}
