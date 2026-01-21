@@ -23,9 +23,80 @@
 
     <!-- Début du main -->
     <main class="main__content">
-      <!-- Début de la section  -->
-      <section class=""></section>
-      <!-- Fin de la section  -->
+      <!-- Début de la section form section -->
+      <section class="form__section">
+        <h1 class="main__title">Contactez-nous !</h1>
+
+        <form class="form" action="#" method="post">
+          <div class="form__group">
+            <label for="name">Nom :</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Dupont"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="contact@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="message">Message :</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Votre message ici..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn btn__primary" type="submit">Envoyer</button>
+        </form>
+      </section>
+      <!-- Fin de la section form__section -->
+
+      <!-- Début de la section contact__presentation -->
+      <section class="contact__presentation">
+        <img
+          class="hero__img-1"
+          src="img/contact-img.jpg"
+          alt="image menuiserie client"
+        />
+        <h2>
+          Nous serions heureux de vous conseiller dans notre showroom à Steinen
+          dans le canton de Schwyz. Nous vous présentons un large choix de
+          cuisines et de meubles sur une superficie de plus de 300 mètres
+          carrés. Notre personnel compétent se fera un plaisir de prendre le
+          temps de vous fournir des informations complètes sur les différents
+          matériaux et designs. Nous sommes impatients de vous aider à réaliser
+          la maison de vos rêves. Venez nous rendre visite et laissez-vous
+          inspirer.
+        </h2>
+        <div class="projects__section">
+          <h3>Actuellement</h3>
+          <div class="projects__list">
+            <a href="#" class="project__card"> Installateur </a>
+            <a href="#" class="project__card">
+              Bilan : Journée portes ouvertes <span class="year"></span>
+            </a>
+            <a href="#" class="project__card">
+              Prochain après-midi de projet le 28 juin
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Fin de la section atelier__presentation -->
     </main>
     <!-- Fin du main -->
 
