@@ -95,6 +95,11 @@ strong {
     font-weight: var(--font-weight-medium);
 }
 
+input,
+textarea {
+    outline: none;
+}
+
 button {
     background: none;
     border: none;
@@ -103,6 +108,7 @@ button {
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-p);
+    cursor: pointer;
 }
 
 ::selection {
@@ -168,6 +174,49 @@ header {
     background-color: var(--white);
     border-radius: 0 0 30px 30px;
     padding: 100px 60px 0 60px;
+}
+
+/**** section ****/
+
+section {
+    width: 100%;
+}
+
+.main__title {
+    text-align: center;
+}
+
+.hero__img-1 {
+    width: 100%;
+}
+
+.projects__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__section {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__list {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.project__card {
+    width: 100%;
+    padding: 20px 0;
+    color: var(--dark);
+    border-bottom: 1px solid var(--dark);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project__card:hover {
+    transform: scale(1.04);
 }
 
 /**** footer ****/
@@ -268,6 +317,15 @@ footer,
     h3 {
         font-size: 1.5rem;
         line-height: 1.6rem;
+    }
+
+    .projects__section {
+        flex-direction: column;
+    }
+
+    .projects__list {
+        width: 100%;
+        margin-top: 50px;
     }
 
     footer {
