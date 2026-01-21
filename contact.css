@@ -1,0 +1,76 @@
+/**** section form section ****/
+
+.form__section,
+.form,
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__section {
+    align-items: center;
+    padding: 100px 0;
+}
+
+.form {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    gap: calc(var(--spacing-unit) * 10);
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 10px 12px 10px 12px;
+    border: 2px solid var(--dark);
+    border-radius: 12px;
+    background-color: var(--white);
+    font-family: var(--font-bdo);
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-p);
+    transition: border-color 0.3s ease-in-out;
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: 1;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    border-color: var(--orange)
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+/**** section contact__presentation ****/
+
+.contact__presentation {
+    padding-bottom: 100px;
+    gap: 100px;
+}
+
+.contact__presentation h2 {
+    padding: 100px 0;
+}
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 475px) {
+
+    .form__section,
+    .contact__presentation h2 {
+        padding: 50px 0;
+    }
+}
