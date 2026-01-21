@@ -41,9 +41,7 @@ textarea::placeholder {
     opacity: 1;
 }
 
-input:hover,
 input:focus,
-textarea:hover,
 textarea:focus {
     border-color: var(--orange)
 }
@@ -52,6 +50,11 @@ textarea {
     resize: vertical;
     min-height: 100px;
     max-height: 300px;
+}
+
+.form__group p {
+    margin-top: 6px;
+    font-weight: var(--font-weight-medium);
 }
 
 /**** section contact__presentation ****/
