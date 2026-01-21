@@ -91,10 +91,7 @@ a {
     cursor: pointer;
 }
 
-strong {
-    font-weight: var(--font-weight-medium);
-}
-
+button,
 input,
 textarea {
     outline: none;
@@ -103,7 +100,6 @@ textarea {
 button {
     background: none;
     border: none;
-    outline: none;
     font-family: var(--font-bdo);
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-regular);
