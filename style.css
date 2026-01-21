@@ -73,6 +73,10 @@ section {
     gap: 100px;
 }
 
+.atelier__presentation h2 {
+    padding-top: 150px;
+}
+
 .atelier__presentation,
 .projects__list {
     display: flex;
@@ -116,6 +120,10 @@ section {
     .atelier__presentation {
         padding: 50px 0 200px 0;
         gap: 100px;
+    }
+
+    .atelier__presentation h2 {
+        padding-top: 0;
     }
 }
 
