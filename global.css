@@ -24,7 +24,7 @@
     --font-bricolage: "Bricolage Grotesque", sans-serif;
 
     /* Font Size */
-    --font-size-p: 1rem;
+    --font-size-p: 1.2rem;
     --font-size-h1: 3rem;
     --font-size-h2: 2.5rem;
     --font-size-h3: 2rem;
@@ -34,7 +34,7 @@
     --font-weight-medium: 600;
 
     /* Line heights */
-    --line-height-p: 1.5rem;
+    --line-height-p: 1.8rem;
     --line-height-h1: 3.5rem;
     --line-height-h2: 3.2rem;
     --line-height-h3: 2.5rem;
@@ -177,6 +177,7 @@ header {
 
 section {
     width: 100%;
+    padding: 100px 0;
 }
 
 /**** section hero ****/
@@ -190,7 +191,6 @@ section {
 .hero {
     position: relative;
     max-width: 1440px;
-    padding: 100px 0;
     gap: 100px;
 }
 
@@ -321,12 +321,12 @@ footer,
 
 /**** Resposnive design version tablette ****/
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
     .main__content {
         padding-right: 30px;
         padding-left: 30px;
     }
-}
+}*/
 
 /**** Responsive design version mobile ****/
 
@@ -344,6 +344,10 @@ footer,
     h3 {
         font-size: 1.5rem;
         line-height: 1.6rem;
+    }
+
+    section {
+        padding: 50px 0;
     }
 
     .projects__section {
