@@ -19,6 +19,10 @@
     gap: calc(var(--spacing-unit) * 10);
 }
 
+.form__group {
+    margin-bottom: 20px;
+}
+
 label {
     margin-bottom: 8px;
 }
