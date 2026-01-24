@@ -51,3 +51,25 @@
 .card__title {
     margin-bottom: 5px;
 }
+
+/**** Responsive design version petit écran d'ordinateur ****/
+
+@media screen and (max-width: 1024px) {
+    .cards__services {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 572px) {
+    .card__image {
+        height: 200px;
+    }
+}
