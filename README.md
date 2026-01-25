@@ -4,7 +4,7 @@
 
 "L'Atelier du Bois" est un site vitrine développé une entreprise spécialisée dans la menuiserie sur mesure : meubles, placards, agencements intérieurs...
 
-Ce projet, qui se compose d'une page d'accueil et d'un formulaire de contact fonctionnel avec validation front-end et sécurisation des données, a pour cible les particuliers, architectes et décorateurs souhaitant des aménagements sur mesure mais aussi collaborer avec un menuisier de confiance.
+Ce projet, qui se compose d'une page d'accueil et d'un formulaire de contact fonctionnel avec validation front-end et sécurisation des données, a pour cible les particuliers, architectes et décorateurs souhaitant des aménagements.
 
 ## Cahiers des charges
 
@@ -17,7 +17,7 @@ Ce site vitrine répond à un cahier des charges précis :
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/l_atelier_du_bois/
 
 ## Projet développé avec
 
