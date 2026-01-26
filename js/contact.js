@@ -50,3 +50,24 @@ const emailValidation = (email) => {
 };
 // Appel de la fonction emailValidation
 emailValidation(email);
+
+/**
+ * Déclaration de la fonction textareaValidation pour la validation de la textarea
+ *  @param {String} textarea
+ */
+const textareaValidation = (textarea) => {
+  // Ecoute de l'événement "input" sur la textarea
+  textarea.addEventListener("input", (e) => {
+    e.preventDefault();
+    if (textarea.value.length < 50) {
+      document.querySelector(".textarea__error__message").textContent =
+        "Le message doit contenir au moins 50 caractères";
+      return false;
+    } else {
+      document.querySelector(".textarea__error__message").textContent = " ";
+      return true;
+    }
+  });
+};
+// Appel de la fonction textareaValidation
+textareaValidation(textarea);
