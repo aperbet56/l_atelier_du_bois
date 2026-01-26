@@ -61,6 +61,22 @@ textarea {
 }
 
 .form__group p {
-    margin-top: 6px;
+    margin-top: 8px;
     font-weight: var(--font-weight-medium);
+    color: var(--orange);
+    font-size: 1rem;
+}
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 572px) {
+
+    input,
+    textarea {
+        font-size: 1.1rem;
+    }
+
+    textarea {
+        min-height: 220px;
+    }
 }
