@@ -71,3 +71,36 @@ const textareaValidation = (textarea) => {
 };
 // Appel de la fonction textareaValidation
 textareaValidation(textarea);
+
+// Déclaration de la fonction submitForm qui va permettre l'envoi des données du formulaire
+const submitForm = () => {
+  // Ecoute de l'événement "click" sur le bouton "Envoyer"
+  submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (
+      regexName.test(lastName.value) === false ||
+      regexEmail.test(email.value) === false ||
+      textarea.value.length < 50
+    ) {
+      alert(
+        "Veuillez remplir correctement les différents champs di formulaire !"
+      );
+    } else {
+      const contact = {
+        lastName: lastName.value,
+        email: email.value,
+        textarea: textarea.value,
+      };
+      console.log(contact);
+
+      setTimeout(() => {
+        alert(
+          "Votre message a bien été envoyé ! Nous vous répondrons dans les plus brefs délais ! "
+        );
+        window.location.href = "index.html";
+      }, 500);
+    }
+  });
+};
+// Appel de la fonction submitForm()
+submitForm();
