@@ -1,5 +1,13 @@
 ## L'ATELIER DU BOIS 🪵 | SITE VITRINE
 
+- Page d'accueil
+
+![Design preview for the project](./img/banner.png)
+
+- Page contact
+
+![Design preview for the project](./img/banner-2.png)
+
 ## Le challenge
 
 "L'Atelier du Bois" est un site vitrine développé une entreprise spécialisée dans la menuiserie sur mesure : meubles, placards, agencements intérieurs...
@@ -33,3 +41,4 @@ Lien vers le projet : https://aperbet56.github.io/l_atelier_du_bois/
 - Page web responsive
 - JavaScript
 - Code JavaScript commenté
+- Regex
